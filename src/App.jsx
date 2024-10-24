@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./App.css";
+import "./index.css";
 import { puppyList } from "./data.js";
-import "./path-to-css.css";
+
 function App() {
   const [puppies, setPuppies] = useState(puppyList);
   const [featPupId, setFeatPupId] = useState(null);
@@ -18,7 +19,7 @@ function App() {
   console.log(puppies);
   return (
     <>
-      <div className="App">
+      <div className="app">
         <div>
           {puppies.map((puppy) => {
             return (
